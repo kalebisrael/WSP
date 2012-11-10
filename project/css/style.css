@@ -1,4 +1,173 @@
-html, body, header, nav, footer, ul, li{
+html, body, header, nav, footer, ul, li, h1, h2, p{
 	margin: 0;
 	padding: 0;
+}
+
+body{
+	color: #333;
+	font: 100%/1.5 Helvetica, Arial, sans-serif;
+	background: #FFF url(../images/global_bg.png);
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h1{
+	font-size: 1.3em;
+}
+
+h2{
+	font-size: 1em;
+}
+
+header img{
+	padding-right: 1.5%;
+}
+
+nav{
+	clear: both;
+}
+
+nav li{
+	display: inline-block;
+	width: 16.1666667%;
+	text-align: center;
+	padding: 2% 0;
+}
+
+ul{
+	list-style: none;
+}
+
+aside{
+	width: 36.2%;
+	overflow: hidden;
+}
+
+aside img{
+	width: 100%;
+}
+
+footer{
+	clear: both;
+	margin-top: 3%;
+	padding: 1.5% 0;
+	overflow: hidden;
+	border-top: 1px solid #999;
+	font-size: 0.7em;
+}
+
+footer ul{
+	width: 30%;
+	text-align: right;
+}
+
+footer li{
+	display: inline-block;
+	padding-left: 3%;
+}
+
+#main{
+	background-color: #FFF;
+	width: 97%;
+	padding: 0 1.5%;
+}
+
+#columns{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.column{
+	width: 29.333333%;
+	padding: 0 2%;
+	float: left;
+}
+
+#content{
+	width: 59.8%;
+	float: left;
+	overflow: hidden;
+}
+
+.fullW{
+	width: 100%;
+}
+
+.floatl{
+	float: left;
+}
+
+.floatr{
+	float: right;
+}
+
+@media screen and (min-width:768px) and (max-width:959px){
+	/*desktop*/
+
+	body{
+		background-image: none;
+	}
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+	/*tablet*/
+
+	nav li{
+		font-size: 1.3em;
+		width: 32.3333333%;
+	}
+
+	#columns{
+		width: 100%;
+	}
+
+	.column{
+		width: 100%;
+		float: none;
+	}
+
+	#content,aside{
+		width: 100%;
+		float: none;
+		padding-top: 3%;
+	}
+}
+
+@media screen and (max-width:479px){
+	/*mobile*/
+
+	nav li{
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #999;
+		font-size: 1.5em;
+		text-align: left;
+	}
+
+	footer ul{
+		float: none;
+		clear: both;
+		text-align: left;
+		width: 100%;
+	}
+
+	footer li{
+		padding: 0 3% 0 0;
+	}
+
+	#columns{
+		width: 100%;
+	}
+
+	.column{
+		width: 100%;
+		float: none;
+	}
+
+	#content,aside{
+		width: 100%;
+		float: none;
+		padding-top: 3%;
+	}
 }
